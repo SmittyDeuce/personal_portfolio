@@ -1,0 +1,70 @@
+body {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, grey, lightblue, silver);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid mintcream;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.personal-interests ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.career-goals p {
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    .personal-interests ul {
+        margin-left: 10px;
+    }
+}

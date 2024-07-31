@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, grey, lightblue, silver);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin: 0;
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-list li {
+    margin: 10px 0;
+}
+
+.project-list a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #e66465;
+    background-image: linear-gradient(#e66465, #9198e5);
+    text-shadow: -1px -1px 2px white, 1px 1px 2px black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: transform 0.2s ease-in;
+}
+
+.project-list a:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .project-list a {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-container {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .project-list a {
+        font-size: 1em;
+    }
+}
