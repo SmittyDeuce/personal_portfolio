@@ -1,13 +1,14 @@
 body {
     font-size: 18px;
     background-color: black;
+
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    border: solid black 2px;
+    border-radius: 12px;
     background-image: linear-gradient(to bottom right, grey, lightblue, silver);
 }
 
@@ -18,6 +19,7 @@ body {
     align-items: flex-start;
     padding: 20px;
     border: solid black 2px;
+    border-bottom: none;
     position: relative;
 }
 
@@ -55,4 +57,57 @@ img {
 
 h1 {
     text-shadow: 2px 2px 2px white;
+}
+
+
+.nav-container {
+    display: flex;
+    flex-direction: column; /* Stack h2 and ul vertically */
+    align-items: center;
+    border-radius: 33px;
+    border: solid black;
+    margin-top: 20px; /* Space above the navigation */
+}
+
+.nav-container h2 {
+    margin-bottom: 10px; /* Space between h2 and ul */
+}
+
+.nav-container ul {
+    display: flex; /* Arrange list items horizontally */
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove default list styling */
+}
+
+.nav-container li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px; /* Adjust padding for spacing */
+    margin: 0 5px; /* Space between items */
+}
+
+.nav-container a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Adjust text color as needed */
+    transition: 0.1s ease;
+}
+
+.nav-container a:hover {
+    transform: scale(1.44);
+}
+
+.nav-container a:visited{
+    color: white;
+    
+}
+
+.footer-container {
+    border: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-end;
 }
