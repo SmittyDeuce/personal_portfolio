@@ -111,3 +111,66 @@ h1 {
     justify-content: center;
     align-items: flex-end;
 }
+
+@media screen and (max-width: 760px) {
+    body {
+        font-size: 16px; /* Adjust font size for better readability on small screens */
+        background-color: #333; /* Optional: Adjust background color if needed */
+    }
+
+    .main-container {
+        flex-direction: column; /* Stack main container items vertically */
+        padding: 10px; /* Add some padding for better spacing */
+    }
+
+    .header-container {
+        flex-direction: column; /* Stack header content vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text within the container */
+        padding: 10px; /* Add padding around header content */
+    }
+
+    .header-content {
+        margin-bottom: 20px; /* Add space below header content */
+    }
+
+    .bio-container {
+        width: 100%; /* Make bio container full width on smaller screens */
+        padding: 10px; /* Add padding inside bio container */
+        border: none; /* Remove border if needed */
+        margin-top: 20px; /* Add space above bio container */
+        text-align: center; /* Center-align text */
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 10px; /* Add padding around navigation items */
+    }
+
+    .nav-container ul {
+        display: block; /* Stack list items vertically */
+        padding: 0;
+        margin: 0;
+        list-style-type: none; /* Remove default list styling */
+    }
+
+    .nav-container li {
+        margin: 5px 0; /* Space between navigation items */
+    }
+
+    .footer-container {
+        text-align: center; /* Center text within the footer */
+        padding: 10px; /* Add padding inside footer container */
+    }
+
+    img {
+        width: 150px; /* Adjust image size for smaller screens */
+        height: 150px;
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Adjust heading font sizes for better readability */
+    }
+}
